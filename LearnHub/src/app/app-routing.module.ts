@@ -9,7 +9,7 @@ import { JoinnowComponent } from './joinnow/joinnow.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
 
-{path:'Course',component:CourseComponent},
+{path:'course',component:CourseComponent},
 
 {path:'joinnow',component:JoinnowComponent},
 
