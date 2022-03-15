@@ -1,0 +1,40 @@
+.navbar
+
+{
+
+    background-color:darkslategrey;
+
+    background-size: 2px;
+
+}
+
+.navbar-light .navbar-nav .nav-link
+
+{
+
+    color:rgb(23, 204, 120);
+
+    font-size: 18px;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+
+{
+
+    text-decoration: underline;
+
+    text-decoration-color: rgb(62, 13, 177);
+
+}
+
+.navbar-brand
+
+{
+
+    color:rgb(209, 102, 14);
+
+    font-size: 3s0px;
+
+}
+
