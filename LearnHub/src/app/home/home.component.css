@@ -16,5 +16,21 @@
 }
 .homecontent h1
 {
-    color: rgb(224, 145, 26);
+    color: brown;
+    font-size: 50px;
+} 
+.homecontent a
+{
+    margin-top: 10px;
+}
+@media screen and (max-width:600px)
+{
+    .home img
+    {
+        height: 700pxS;
+    }
+    .homecontent h1
+    {
+      font-size: 40px;
+    }
 }
