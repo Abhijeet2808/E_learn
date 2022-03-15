@@ -1,4 +1,10 @@
 .course
 {
-    background-color: #6b3baa;
+    background-color: #bbb0ca;
+    padding: 50px 10px;
+}
+.box
+{
+    background-color: aliceblue;
+    padding: 10px 10px;
 }
