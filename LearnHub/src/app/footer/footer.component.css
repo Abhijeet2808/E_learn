@@ -18,6 +18,12 @@
 
 .footer-copyright {
     text-align:center;
-    line-height:inherit;
-    margin-top:20px;
+    margin-top: auto;
+
+
+}
+
+.footer .row{
+    border-left-style:-50px ;
+    
 }
