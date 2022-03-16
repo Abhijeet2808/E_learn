@@ -18,6 +18,13 @@
 
 .footer-copyright {
     text-align:center;
-    line-height:inherit;
-    margin-top:20px;
+    margin-top: auto;
+
+
+}
+
+.footer .row g-5 p{
+    border-left-style:-50px ;
+    columns: 50px;
+    
 }
