@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { CourseComponent } from './course/course.component';
+import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { JoinnowComponent } from './joinnow/joinnow.component';
 
@@ -15,7 +16,9 @@ const routes: Routes = [
 
 {path:'about',component:AboutComponent},
 
-{path:'contact',component:ContactComponent}
+{path:'contact',component:ContactComponent},
+
+{path:'Footer',component:FooterComponent}
 ];
 
 @NgModule({
