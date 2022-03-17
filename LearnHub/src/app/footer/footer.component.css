@@ -45,7 +45,8 @@
 .footer .copyright {
     padding: 25px 0;
     font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+    
+   
 }
 
 .footer .copyright a {
@@ -62,4 +63,13 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+.footer-content
+{
+   display:flex;
+       
+}
+.contact
+{
+    padding-left: 20px;
 }
