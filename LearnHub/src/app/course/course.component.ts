@@ -12,7 +12,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CourseComponent implements OnInit {
   users:any;
-  descriptionData: any;
+  descriptionData: any=null;
+  cName: any;
 
   constructor(private router:Router,public http: HttpClient) { }
 
@@ -29,9 +30,9 @@ export class CourseComponent implements OnInit {
     });
 
   }
-  descriptionShow(desc:any){
+  descriptionShow(cName:any,desc:any){
     this.descriptionData=desc;
-
+    this.cName=cName;
     
   }
 }
