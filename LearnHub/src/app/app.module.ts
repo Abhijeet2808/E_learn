@@ -12,7 +12,7 @@ import { JoinnowComponent } from './joinnow/joinnow.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReadMoreComponent } from './read-more/read-more.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +27,8 @@ import { ReadMoreComponent } from './read-more/read-more.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

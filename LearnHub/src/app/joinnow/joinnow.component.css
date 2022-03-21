@@ -1,11 +1,12 @@
 .joinnow
 {
     background-color: rgb(142, 206, 226);
-    padding: 100px 80px;
+    padding: 60px 60px;
     text-align: center;
 }
 form{
     margin-left: 30%;
+    margin-right: 30%;
 }
 .login
 {

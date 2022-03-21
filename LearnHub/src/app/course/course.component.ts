@@ -14,6 +14,8 @@ export class CourseComponent implements OnInit {
   users:any;
   descriptionData: any=null;
   cName: any;
+  usersAll: any;
+  searchTextVal: any;
 
   constructor(private router:Router,public http: HttpClient) { }
 
@@ -22,9 +24,9 @@ export class CourseComponent implements OnInit {
   }
 
   getData():void{
-    this.http.get('http://localhost:5000/users').subscribe(data => {
-    debugger;  
+    this.http.get('http://localhost:5000/getusers').subscribe(data => {  
     this.users = data;
+    this.usersAll = data;
       console.log(this.users);
     
     });
@@ -34,6 +36,10 @@ export class CourseComponent implements OnInit {
     this.descriptionData=desc;
     this.cName=cName;
     
+  }
+  searchText(){
+    this.users=this.usersAll.filter((element: { field: any; }) => element.field == this.searchTextVal);
+
   }
 }
 

@@ -1,35 +1,35 @@
 <section class="joinnow" >
     <h2>Joining Form</h2>
     <div class="col-lg-4 col-md-12 wow fadeInUp" class="joincenter" data-wow-delay="0.5s">
-      <form>
+      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
           <div class="form" class="row g-3">
               <div class="col-md-12">
                   <div class="form-floating">
-                      <input type="text" class="form-control" id="name" placeholder="Your Name">
+                      <input type="text" class="form-control" id="name" formControlName="user_name" placeholder="Your Name">
                       <label for="name">Your Name</label>
                   </div>
               </div>
               <div class="col-md-12">
                   <div class="form-floating">
-                      <input type="email" class="form-control" id="email" placeholder="Your Email">
+                      <input type="email" class="form-control" id="email" formControlName="e_mail" placeholder="Your Email">
                       <label for="email">Your Email</label>
                   </div>
               </div>
               <div class="col-12">
                   <div class="form-floating">
-                      <input type="text"  class="form-control" id="subject" placeholder="Subject">
+                      <input type="text"  class="form-control" id="subject" formControlName="course_name" placeholder="Subject">
                       <label for="subject">Course</label>
                   </div>
               </div>
               <div class="col-md-12">
                 <div class="form-floating">
-                    <input type="tel" class="form-control" id="tel" placeholder="Your phone number">
+                    <input type="tel" class="form-control" id="tel"  formControlName="phone_no" placeholder="Your phone number">
                     <label for="tel">Phone Number</label>
                 </div>
             </div>
               <div class="col-12">
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                    <textarea class="form-control" placeholder="Enter a address here" id="message" formControlName="address"  style="height: 150px"></textarea>
                     <label for="message">Address</label>
                 </div>
             </div>              
