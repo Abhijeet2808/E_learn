@@ -12,6 +12,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CourseComponent implements OnInit {
   users:any;
+  descriptionData: any;
 
   constructor(private router:Router,public http: HttpClient) { }
 
@@ -21,11 +22,17 @@ export class CourseComponent implements OnInit {
 
   getData():void{
     this.http.get('http://localhost:5000/users').subscribe(data => {
-      this.users = data;
+    debugger;  
+    this.users = data;
       console.log(this.users);
     
     });
 
+  }
+  descriptionShow(desc:any){
+    this.descriptionData=desc;
+
+    
   }
 }
 
