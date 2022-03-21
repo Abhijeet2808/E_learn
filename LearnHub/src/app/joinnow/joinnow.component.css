@@ -4,6 +4,9 @@
     padding: 100px 80px;
     text-align: center;
 }
+form{
+    margin-left: 30%;
+}
 .login
 {
     background-color: aquamarine;
