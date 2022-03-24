@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReadMoreComponent } from './read-more/read-more.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AddcartComponent } from './addcart/addcart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     JoinnowComponent,
     ContactComponent,
     FooterComponent,
-    ReadMoreComponent
+    ReadMoreComponent,
+    AddcartComponent
   ],
   imports: [
     BrowserModule,

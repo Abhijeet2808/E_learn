@@ -32,6 +32,7 @@ export class JoinnowComponent implements OnInit {
     // Process checkout data here
     this.http.post('http://localhost:5000/users',
       this.checkoutForm.value).subscribe(data => {
+        debugger;
 
       });
     console.warn('Your order has been submitted', this.checkoutForm.value);

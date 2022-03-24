@@ -1,3 +1,6 @@
+
+
+
 .home img
 {
     width:100%;
@@ -24,14 +27,17 @@
 {
     margin-top: 10px;
 }
-@media screen and (max-width:600px)
-{
+@media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape){
+
+
     .home img
     {
         height: 700pxS;
+        position: absolute;
     }
     .homecontent h1
     {
       font-size: 40px;
     }
+
 }

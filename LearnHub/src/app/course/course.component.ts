@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -17,7 +17,7 @@ export class CourseComponent implements OnInit {
   usersAll: any;
   searchTextVal: any;
 
-  constructor(private router:Router,public http: HttpClient) { }
+  constructor(private router:Router,public http: HttpClient, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getData();
@@ -40,6 +40,17 @@ export class CourseComponent implements OnInit {
   searchText(){
     this.users=this.usersAll.filter((element: { field: any; }) => element.field == this.searchTextVal);
 
+  }
+  addcart(item:any){
+    this.http.post('http://localhost:5000/addcart',
+      item).subscribe(data => {debugger;
+        this.router.navigate(['/addcart']);
+
+      });
+
+    
+
+  
   }
 }
 
