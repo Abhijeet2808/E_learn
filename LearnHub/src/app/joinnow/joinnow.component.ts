@@ -41,3 +41,6 @@ export class JoinnowComponent implements OnInit {
   }
 
 }
+
+
+

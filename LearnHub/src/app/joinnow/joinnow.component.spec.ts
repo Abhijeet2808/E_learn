@@ -23,3 +23,9 @@ describe('JoinnowComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
+
+
+
+

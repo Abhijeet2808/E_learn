@@ -17,7 +17,7 @@
 </section-->
 
 <!--search bar-->
-<div style="text-align: center; margin: 3% 30%">
+<!-- <div style="text-align: center; margin: 3% 30%">
     <h1> Search Your Favorite Courses</h1>
     
     <div class="searchbar" class="form-group row">
@@ -29,14 +29,14 @@
         
       </div>
     </div>
-   </div>
+   </div> -->
 <!--search bar end-->
                         
 <!-- Courses Start -->
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
+            <!-- <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6> -->
             <h1 class="mb-5">Popular Courses</h1>
         </div>
         <div class="row g-4 justify-content-center">
@@ -45,7 +45,7 @@
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" [src]="item.img_path" alt="">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;"    data-bs-toggle="modal" data-bs-target="#exampleModalLong" (click)="descriptionShow(item.coursename,item.description)" >Read More</a>
+                            
                              <!-- <a routerLink="/addcart" href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Join Now</a> -->
                              
                               
@@ -62,7 +62,7 @@
                         <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>{{item.students}}</small>
                     </div>
                     <div style="text-align: left;margin-left: 20px;">
-
+                        <a class="flex-shrink-0 btn btn-primary px-3 border-end"   data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="descriptionShow(item.coursename,item.description)" >Read More</a>
                         <button (click)="addcart(item)" class="btn btn-primary px-3 border-end" style="margin-left: 100px;">add to cart</button>
         
                         <!-- <a routerLink="/addcart"><button class="btn btn-primary">buy</button></a> -->
@@ -188,7 +188,7 @@
 
     </div>
 </div>
-<!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -200,48 +200,9 @@
         </div>
       </div>
     </div>
-  </div> -->
-
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">{{cName}}</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            {{descriptionData}}
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <a routerLink="/addcart"> <button  type="button"  class="btn btn-primary">ADD CART</button></a>
-        </div>
-      </div>
-    </div>
   </div>
 
+ 
 
-  <div class="modal fade" id="addcartmodal" tabindex="-1" role="dialog" aria-labelledby="addcartmodal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="addcartmodal">{{cName}}</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            {{descriptionData}}
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <a > <button  type="button"  class="btn btn-primary">ADD CART</button></a>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Courses End -->
-
+  
 
