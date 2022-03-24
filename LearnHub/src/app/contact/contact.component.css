@@ -1,10 +1,12 @@
-
+@media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape){
 form{
     margin-left: 100px;
+
 }
 h3{
     padding-left:120px;
 }
 .center{
     margin-left: 250px;
+}
 }
