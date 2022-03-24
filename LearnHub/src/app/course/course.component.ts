@@ -43,7 +43,7 @@ export class CourseComponent implements OnInit {
   }
   addcart(item:any){
     this.http.post('http://localhost:5000/addcart',
-      item).subscribe(data => {debugger;
+      item).subscribe(data => {
         this.router.navigate(['/addcart']);
 
       });

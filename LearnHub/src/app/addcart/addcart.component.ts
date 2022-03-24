@@ -35,7 +35,7 @@ export class AddcartComponent implements OnInit {
   }
   deletecart(id:any){
     this.http.post('http://localhost:5000/deletecart',
-      id).subscribe(data => {debugger;
+      id).subscribe(data => {
         this.getcart();
       });
     
